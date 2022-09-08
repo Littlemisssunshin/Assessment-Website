@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydney Propeties</title>
+</head>
+<body>
+    <center>
+        <h1> Sydney Propeties</h1>
+    </div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur hic libero sequi eius dignissimos reiciendis quam corporis, reprehenderit ducimus dolor ullam mollitia officia aliquam accusamus culpa provident cumque enim alias atque fuga amet laboriosam aspernatur voluptate? Animi facere maiores vitae voluptate consectetur est aspernatur perspiciatis sed, repudiandae quas nostrum at quibusdam sapiente aliquid a ab, asperiores neque quam porro? Saepe qui deserunt odio iste vitae quaerat, officia quas suscipit consequatur molestiae, voluptas ipsam voluptatum repellat deleniti quam dolorum ab ad obcaecati beatae ullam quibusdam! Odio et vel rerum voluptatibus aliquam saepe accusantium, dolorem tempora illo quidem porro consequuntur, soluta ipsum.</p>
+    </center>
+    <<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="image (6).jpg" style="width:100%">
+      <div class="text">Front View</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="image (2).jpg" style="width:100%">
+      <div class="text">Main Bathroom</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="image (3).jpg" style="width:100%">
+      <div class="text">Pool</div>
+    </div>
+  
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="image (4).jpg" style="width:100%">
+        <div class="text">Backyard</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="image (1).jpg" style="width:100%">
+        <div class="text">Master Bedroom</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="image (5).jpg" style="width:100%">
+        <div class="text">Floorplan</div>
+      </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <div style="text-align:center">
+
+    </body>
+</html>
+<script>let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+
+    
